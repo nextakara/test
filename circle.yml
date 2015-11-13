@@ -5,7 +5,7 @@ machine:
     - mysql
 database:
   post:
-    - mysql -u root -E "CREATE DATABASE phalcon;"
+    - mysql -u root -e "CREATE DATABASE phalcon;"
     - mysql -u root < phalcon.sql
 test:
   override:
