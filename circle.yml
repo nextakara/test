@@ -3,7 +3,7 @@ machine:
     version: 5.5.11
   service:
     - mysql
-Database:
+database:
   post:
     - mysql -u root -E "CREATE DATABASE phalcon"
     - mysql -u root < phalcon.sql
