@@ -9,5 +9,5 @@ database:
     - mysql -u root phalcon < phalcon.sql
 test:
   override:
-    - mysql -u root phalcon -E "show tables;"
+    - mysql -u root phalcon -e "show tables;"
 
