@@ -1,3 +1,9 @@
 machine:
   php:
     version: 5.5.11
+  service:
+    - mysql
+Database:
+  post:
+    - mysql -u root -E "CREATE DATABASE phalcon"
+    - mysql -u root < phalcon.sql
