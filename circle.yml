@@ -7,3 +7,7 @@ Database:
   post:
     - mysql -u root -E "CREATE DATABASE phalcon"
     - mysql -u root < phalcon.sql
+test:
+  override:
+    - mysql -u root phalcon -E "show tables;"
+
