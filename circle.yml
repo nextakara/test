@@ -10,4 +10,5 @@ database:
 test:
   override:
     - mysql -u root phalcon -e "show tables;"
+    - echo "test"
 
